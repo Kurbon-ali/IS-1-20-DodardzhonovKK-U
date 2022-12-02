@@ -13,69 +13,6 @@ namespace IS_1_20_DodardzhonovKK_U
     public partial class Menu : Form
     {
 
-        class Accessories<P>
-        {
-            public int price;
-            public int release_year;
-            public P articul;
-
-        
-
-        public Accessories (int price, int release_year, P articul)
-            {
-            this.price = price;
-            this.release_year = release_year;
-            this.articul = articul;
-            }
-
-
-            public void Display()
-            {
-                MessageBox.Show($"Цена: {price}  \nГод выпуска: {release_year} \nАртикул {articul} ");
-            }
-
-            class Hard_drives<P> : Accessories<P>
-            {
-                public int NR { get; set; }
-                public string Interface { get; set; }
-                public int Volume { get; set; }
-
-                public Hard_drives (int NR, string Interface, int Volume, int price, int release_year, P articul) : base (price, release_year, articul)
-                {
-                    this.NR = NR;
-                    this.Interface = Interface;
-                    this.Volume = Volume;
-                }
-
-                public new void Display()
-                {
-                    MessageBox.Show($"Артикул {articul} \nЦена: {price}  \nГод выпуска: {release_year} \nКоличество Оборотов: {NR} Интерфейс: {Interface} Объем: {Volume} ");
-                }
-            }
-
-            class Videocard<P> : Accessories<P>
-            {
-                public int GPUfreq;
-                public string manuf;
-                public int memory;
-
-                public Videocard (int NR, string Interface, int Volume, int price, int release_year, P articul) : base(price, release_year, articul)
-                {
-                    this.NR = NR;
-                    this.Interface = Interface;
-                    this.Volume = Volume;
-                }
-
-            }
-
-
-        }
-
-
-
-
-
-
         public Menu()
         {
             InitializeComponent();
