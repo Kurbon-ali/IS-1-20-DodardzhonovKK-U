@@ -140,6 +140,9 @@
     <EmbeddedResource Include="Task2.resx">
       <DependentUpon>Task2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Task3.resx">
+      <DependentUpon>Task3.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
