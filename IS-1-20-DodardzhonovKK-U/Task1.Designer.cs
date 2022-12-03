@@ -239,9 +239,9 @@ namespace IS_1_20_DodardzhonovKK_U
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(601, 366);
+            this.button3.Location = new System.Drawing.Point(592, 361);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 41);
+            this.button3.Size = new System.Drawing.Size(84, 46);
             this.button3.TabIndex = 21;
             this.button3.Text = "Exit";
             this.button3.UseVisualStyleBackColor = true;

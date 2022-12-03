@@ -127,7 +127,7 @@ namespace IS_1_20_DodardzhonovKK_U
         {
             this.Hide();
             Menu a = new Menu();
-            a.ShowDialog();
+            a.ShowDialog(); //
         }
     }
 }
