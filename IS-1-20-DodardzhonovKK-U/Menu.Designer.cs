@@ -89,7 +89,7 @@ namespace IS_1_20_DodardzhonovKK_U
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(440, 271);
+            this.button6.Location = new System.Drawing.Point(454, 271);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(74, 45);
             this.button6.TabIndex = 5;
