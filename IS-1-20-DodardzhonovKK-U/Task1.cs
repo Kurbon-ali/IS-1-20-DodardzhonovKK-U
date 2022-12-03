@@ -123,6 +123,11 @@ namespace IS_1_20_DodardzhonovKK_U
 
             }
 
-
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu a = new Menu();
+            a.ShowDialog();
+        }
     }
 }
