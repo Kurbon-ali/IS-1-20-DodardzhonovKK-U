@@ -82,5 +82,10 @@ namespace IS_1_20_DodardzhonovKK_U
 
             this.Close();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
