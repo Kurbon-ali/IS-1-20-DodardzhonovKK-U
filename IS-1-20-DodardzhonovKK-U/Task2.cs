@@ -31,7 +31,7 @@ namespace IS_1_20_DodardzhonovKK_U
         {
             InitializeComponent();
         }
-
+        
         private void Task2_Load(object sender, EventArgs e)
         {
 
@@ -39,6 +39,7 @@ namespace IS_1_20_DodardzhonovKK_U
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //экземпляр класса
             ConnectSQL connection = new ConnectSQL();
             try
             {
