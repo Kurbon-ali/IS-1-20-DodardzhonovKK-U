@@ -17,7 +17,8 @@ namespace IS_1_20_DodardzhonovKK_U
         {
             public MySqlConnection conn()
             {
-                string host = "10.90.12.110";
+                //string host = "10.90.12.110";
+                string host = "chuc.caseum.ru";
                 string port = "33333";
                 string user = "uchebka";
                 string db = "uchebka";
