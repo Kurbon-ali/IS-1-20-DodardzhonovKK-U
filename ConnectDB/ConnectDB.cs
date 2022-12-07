@@ -22,6 +22,7 @@ namespace ConnectDB
             {
                 return ConnStr = $"server={server};port={port};user={user};database={database};password={password};";
             }
+
         }
 
 
