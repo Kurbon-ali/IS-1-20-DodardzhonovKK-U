@@ -34,9 +34,10 @@ namespace IS_1_20_DodardzhonovKK_U
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Location = new System.Drawing.Point(16, 15);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(127, 82);
+            this.button1.Size = new System.Drawing.Size(169, 101);
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -44,12 +45,14 @@ namespace IS_1_20_DodardzhonovKK_U
             // 
             // Task3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(633, 350);
+            this.ClientSize = new System.Drawing.Size(844, 431);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Task3";
             this.Text = "Task3";
+            this.Load += new System.EventHandler(this.Task3_Load);
             this.ResumeLayout(false);
 
         }
