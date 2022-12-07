@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ConnectDB;
 using MySql.Data.MySqlClient;
-using static ConnectDB.Class1;
+using static ConnectDB.ConnectDB;
 
 
 namespace IS_1_20_DodardzhonovKK_U
@@ -19,7 +19,7 @@ namespace IS_1_20_DodardzhonovKK_U
 
         //Переменная соединения
         MySqlConnection conn;
-        Class1 connect;
+        ConnectDB.ConnectDB connect;
         //string connStr = "server=10.90.12.110;port=33333;user=st_1_20_13;database=is_1_20_st13_KURS;password=31485311;";
         string connStr = "server=chuc.caseum.ru;port=33333;user=st_1_20_13;database=is_1_20_st13_KURS;password=31485311;";
 
