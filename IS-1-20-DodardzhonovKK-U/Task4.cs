@@ -26,13 +26,13 @@ namespace IS_1_20_DodardzhonovKK_U
         }
 
 
-        private void Task4_Load(object sender, EventArgs e)
+        public void Task4_Load(object sender, EventArgs e)
         {
             conn = new MySqlConnection(connStr);
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        public void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             try
             {
@@ -82,6 +82,13 @@ namespace IS_1_20_DodardzhonovKK_U
             {
                 conn.Close();
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Menu a23 = new Menu();
+            this.Hide();
+            a23.ShowDialog();
         }
     }
 }
