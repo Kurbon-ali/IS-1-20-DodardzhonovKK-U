@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ConnectDB;
 using MySql.Data.MySqlClient;
+using static ConnectDB.ConnectDB;
 
 
 namespace IS_1_20_DodardzhonovKK_U
@@ -35,11 +36,11 @@ namespace IS_1_20_DodardzhonovKK_U
         {
             try
             {
-                int id = dataGridView1.SelectedCells[0].RowIndex + 1;
-
                 conn.Open();
 
-                string sql = $"SELECT photoUrl FROM t_datetime WHERE Id = {id}";
+                int id = dataGridView1.SelectedCells[0].RowIndex + 1;
+
+                string sql = $"SELECT photoUrl FROM t_datetime WHERE id = {id}";
 
                 MySqlCommand command = new MySqlCommand(sql, conn);
 
@@ -49,7 +50,7 @@ namespace IS_1_20_DodardzhonovKK_U
 
             }
 
-            finally
+            catch
             {
                 conn.Close();
             }
@@ -63,21 +64,24 @@ namespace IS_1_20_DodardzhonovKK_U
                 conn.Open();
 
                 MySqlCommand command = new MySqlCommand($"SELECT fio, date_of_Birth FROM t_datetime;", conn);
-                MySqlDataReader reader = command.ExecuteReader();
 
-                while (reader.Read())
+                MySqlDataReader a3 = command.ExecuteReader();
+
+                while (a3.Read())
                 {
+
                     int grid = dataGridView1.Rows.Add();
-                    dataGridView1.Rows[grid].Cells[0].Value = reader[0].ToString();
-                    dataGridView1.Rows[grid].Cells[1].Value = reader[1].ToString();
+                    dataGridView1.Rows[grid].Cells[0].Value = a3[0].ToString();
+
+                    dataGridView1.Rows[grid].Cells[1].Value = a3[1].ToString();
                 }
-                reader.Close();
+
+                a3.Close();
             }
-            finally
+            catch
             {
                 conn.Close();
             }
-            
         }
     }
 }
