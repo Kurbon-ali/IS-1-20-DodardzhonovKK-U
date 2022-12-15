@@ -42,15 +42,14 @@ namespace IS_1_20_DodardzhonovKK_U
                     $"SELECT idStud FROM t_Uchebka_DodardzhonovKK WHERE(idStud = LAST_INSERT_ID());";
                 MySqlCommand command = new MySqlCommand(sql, conn);
 
-                if (command.ExecuteNonQuery() == 1)
-                {
-                    MessageBox.Show("Запись добавлена");
-                }
-
-            }
-            catch (Exception ex)
+            if (command.ExecuteNonQuery() == 1)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Запись добавлена");
+            }
+            }
+            catch 
+            {
+                MessageBox.Show("Что то неправильно");
             }
             finally
             {
@@ -58,9 +57,7 @@ namespace IS_1_20_DodardzhonovKK_U
             }
         }
 
-
-        public void button2_Click(object sender, EventArgs e)
-
+        private void button2_Click(object sender, EventArgs e)
         {
             conn.Open();
             MySqlCommand command = new MySqlCommand($"SELECT * FROM t_Uchebka_DodardzhonovKK;", conn);
@@ -73,7 +70,6 @@ namespace IS_1_20_DodardzhonovKK_U
                 dataGridView1.Rows[grid].Cells[1].Value = reader[1].ToString();
                 dataGridView1.Rows[grid].Cells[2].Value = DateTime.Parse(reader[2].ToString());
             }
-
             reader.Close();
         }
     }
